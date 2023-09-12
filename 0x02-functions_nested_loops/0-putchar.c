@@ -1,5 +1,6 @@
-c
-#include "stdio.h"
+#include <stdio.h>
+
+typedef int my_type;
 
 int main(void)
 {
@@ -14,4 +15,4 @@ int main(void)
     putchar('\n');
 
     return (0);
-}
+}}
