@@ -24,7 +24,7 @@ void times_table(void)
 
 				if (product < 10)
 				{
-					_putchar(' '); // Add an extra space for single-digit numbers
+					_putchar(' '); /* Add an extra space for single-digit numbers */
 					_putchar('0' + product);
 				}
 				else
@@ -36,7 +36,7 @@ void times_table(void)
 
 			if (col < 9)
 			{
-				_putchar(' '); // Add a space after each comma
+				_putchar(' '); /* Add a space after each comma */
 			}
 		}
 		_putchar('\n');
