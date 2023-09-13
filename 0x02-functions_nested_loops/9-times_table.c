@@ -19,21 +19,24 @@ void times_table(void)
 			}
 			else
 			{
+				_putchar(',');
 				_putchar(' ');
 
 				if (product < 10)
-					_putchar(' ');
-
+				{
+					_putchar(' '); // Add an extra space for single-digit numbers
+					_putchar('0' + product);
+				}
 				else
+				{
 					_putchar('0' + (product / 10));
-
-				_putchar('0' + (product % 10));
+					_putchar('0' + (product % 10));
+				}
 			}
 
 			if (col < 9)
 			{
-				_putchar(',');
-				_putchar(' ');
+				_putchar(' '); // Add a space after each comma
 			}
 		}
 		_putchar('\n');
