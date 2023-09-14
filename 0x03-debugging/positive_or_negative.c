@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * positive_or_negative - prints whether a number is positive, negative, or zero
@@ -19,3 +20,4 @@ void positive_or_negative(int i)
         printf("%d is zero\n", i);
     }
 }
+
