@@ -1,20 +1,25 @@
+/*
+ * File: 1-dlistint_len.c
+ * Auth: Gedeon Obae Gekonge
+ */
+
 #include "lists.h"
 
 /**
- * dlistint_len - Return list len
- * @h: struct list
- * Return: list_len
+ * dlistint_len - Counts the number of elements in a linked dlistint_t list.
+ * @h: The head of the dlistint_t list.
+ *
+ * Return: The number of elements in the dlistint_t list.
  */
-
 size_t dlistint_len(const dlistint_t *h)
 {
-	size_t len = 0;
-	int i = 0;
+	size_t nodes = 0;
 
-	for (i = 0; h; i++)
+	while (h)
 	{
-		len += 1;
+		nodes++;
 		h = h->next;
 	}
-	return (len);
+
+	return (nodes);
 }
